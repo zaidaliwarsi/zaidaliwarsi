@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <div class="menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="mobile-phone.html">Mobile Phones</a>
+                        
+                        <a href="#">Laptops</a>
+                     
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="drawer">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#blog" class="drawer-link">Blog</a>
+        <a href="contact.html" class="drawer-link">Contact</a>
+    </div>
+
+    <section class="contact-us">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or just want to get in touch, fill out the form below. We look forward to hearing from you!</p>
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <button type="submit" class="contact-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Just Buy</h4>
+                <p>MyPortfolio is dedicated to providing top-notch portfolio websites. We combine creativity with technology to deliver stunning results.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyPortfolio. All rights reserved. | Designed by MyPortfolio Team.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const drawer = document.querySelector('.drawer');
+
+        hamburger.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

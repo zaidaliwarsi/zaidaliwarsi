@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #02ccff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left:10%;
+}
+
+.menu {
+    display: flex;
+    gap: 1.2rem;
+    margin-right:80px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #27b9dd;
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.drawer {
+    display: none;
+    flex-direction: column;
+    background-color: #00000;
+    padding: 2rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.drawer.open {
+    display: flex;
+}
+
+.drawer-link {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    transition: color 0.3s ease;
+}
+
+
+.drawer-link:hover {
+    color: #00a2ff;
+}
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+ #about h2 {
+    margin:30px;
+    text-align: center;
+ }
+ #about p {
+    text-align:center;
+ }
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown:hover .dropdown-toggle {
+    background-color: #555;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown menu directly below the "Shop" link */
+    left: 0;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.navbar .dropdown-menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .drawer.open {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+   background-image: url(pexels-junior-teixeira-1064069-2047905.jpg);
+   background-size:cover;
+   background-position:center;
+    text-align: center;  
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow:5px 5px 4px black;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow:3px 3px 3px black;
+
+}
+
+.cta-button {
+    padding: 0.8rem 1.7rem;
+    background-color: #1e85a5;
+    box-shadow:1px 1px 4px black;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006d67;
+    transform: scale(1.05);
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 7rem 2rem;
+    background-image:url(pexels-junior-teixeira-1064069-2047905.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align:center;
+    padding:20px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align:center;
+}
+
+.team {
+    display: flex;
+justify-content:center;
+    gap: 2rem;
+}
+
+.team-member {
+font-size:16px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.07 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    
+    margin-bottom: 1.7rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+    text-shadow:1px 1px 7px rgb(0, 0, 0);
+}
+
+.team-member p {
+font-size:17px;
+    color: #ffffff;
+    font-weight:500;
+    text-shadow:1px 1px 7px rgb(0, 0, 0);
+}
+
+/* Footer */
+.footer {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h4,
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #e94560;
+}
+
+.footer-about p {
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e94560;
+}
+
+.footer-social a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #e94560;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1A1A2E;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100;
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.contact-us .container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+
+
+
+/* Products Section */
+.products {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.products h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    
+}
+
+/* Adjusted Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap to the next line */
+    justify-content: space-between; /* Ensures space between items */
+    gap: 20px; /* Space between each product */
+}
+
+/* Customized Product Box */
+.product-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px); /* 25% width for each box, minus gap */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Space between rows */
+    height: 300px; /* Ensures the box has a fixed height */
+    display: flex;
+    flex-direction: column;
+     text-overflow:clip;
+    justify-content: space-between; /* Space out content within the box */
+}
+
+.product-box:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+  
+}
+
+.product-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.product-box h4 {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 15px;
+    text-overflow:clip;
+    overflow:hidden;
+
+}
+
+.product-box img {
+    max-width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space between the image and heading */
+}
+
+.product-box p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-overflow:clip;
+}
+
+
+
+
+
+
+/* Product Page Styles */
+
+
+.product-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.product-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures 4 products per line with space between */
+    gap: 20px;
+}
+
+.product-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;  
+    width: calc(25% - 20px); /* 4 boxes per row with space for gap */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    margin-bottom: 20px; /* Space between rows */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px; /* Fixed height to maintain box shape */
+    object-fit: cover; /* Ensures image covers box area without distortion */
+    margin-bottom: 15px; /* Space between image and heading */
+}
+
+.product-box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+#contact h2 {
+    margin-top:100px;
+text-align:center;
+padding:30px;
+}
+
+#contact input {
+    margin-left:35%;
+    width:30%;
+}
+#contact textarea {
+    margin-left:35%;
+    width:30%;
+    padding:20px;
+    margin-bottom:30px;
+}
+#contact button {
+    display:flex;
+    justify-content: center;
+    margin-left:45%;
+    align-items:center;
+}
+
+
+</style>

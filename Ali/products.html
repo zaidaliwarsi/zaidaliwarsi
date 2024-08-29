@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+            <div class="logo">JustBuy</div>
+            <div class="menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="mobile-phone.html">Mobile Phones</a>
+                      
+                        <a href="#">Laptops</a>
+                      
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="drawer">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About</a>
+        <a href="products.html" class="drawer-link">Products</a>
+
+        <a href="contact.html" class="drawer-link">Contact</a>
+    </div>
+
+    <section class="products">
+        <div class="container">
+            <h1>All Products</h1>
+            <div class="product-grid">
+
+                <div class="product-box">
+                    <img src="s24.png" alt="Product 1">
+                    <h4>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 256GB Storage)</h4>
+                </div>
+                <!-- Product Box 2 -->
+                <div class="product-box">
+                    <img src="s24m.png" alt="Product 2">
+                    <h4>Samsung Galaxy S24 5G AI Smartphone (Onyx Black, 8GB, 256GB Storage)</h4>
+                </div>
+                <!-- Product Box 3 -->
+                <div class="product-box">
+                    <img src="sf.png" alt="Product 3">
+                    <h4>Samsung Galaxy Z Fold6 5G Dual Sim AI Smartphone (12GB RAM, 256GB Storage) </h4>
+                </div>
+                <!-- Product Box 4 -->
+                <div class="product-box">
+                    <img src="sz.png" alt="Product 4">
+                    <h4>Samsung Galaxy Z Series Flip 6 5G Dual Sim AI Smartphone (12GB RAM, 512GB Storage)</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About MyPortfolio</h4>
+                <p>MyPortfolio is dedicated to providing top-notch portfolio websites. We combine creativity with technology to deliver stunning results.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyPortfolio. All rights reserved. | Designed by MyPortfolio Team.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const drawer = document.querySelector('.drawer');
+
+        hamburger.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

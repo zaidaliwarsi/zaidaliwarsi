@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+            <div class="logo">Just Buy </div>
+            <div class="menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Shop</a>
+                    <div class="dropdown-menu">
+                        <a href="mobile-phone.html">Mobile Phones</a>
+                     
+                        <a href="#">Laptops</a>
+                       
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+              
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="drawer">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+       
+        <a href="contact.html" class="drawer-link">Contact</a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hey There! I am Zaid Ali</h1>
+            <p>Welcome to our Store.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+<section id="products" class="products">
+    <div class="container">
+        <h1>Trending Products</h1>
+        <div class="product-grid">
+         
+
+     <div class="product-box">
+	<img src="s24.png" alt="Samsung 24" width="200px"; height="230px"; align-items="center";>
+                    <h5>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 256GB Storage)</h5>
+	        <p></p>
+                </div>
+                <div class="product-box">
+                    <img src="w.png" alt="Samsung 24" width="200px"; height="230px"; align-items="center";>
+
+                    <h5>Fire-Boltt Snapp Smart Watch, Selfie Camera, 4G Nano-SIM Slot, 54.1mm AMOLED Display></h5>
+	        
+                </div>
+                <div class="product-box">
+                    <img src="r.png" alt="Samsung 24" width="250px"; height="300px"; align-items="center";>
+
+                    <h5>419 L BESPOKE AI Double Door Refrigerator RT45DB6A4B22</h5>
+	      
+                </div>
+                <div class="product-box">
+                    <img src="o.png" alt="Samsung 24" width="200px"; height="230px"; align-items="center";>
+
+                    <h5>28L Smart Oven with Moisture Sensor, MC28A5147VK</h5>
+	        
+                </div>
+             
+
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer with a love for creating beautiful, user-friendly websites.</p>
+          
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About MyPortfolio</h4>
+                <p>MyPortfolio is dedicated to providing top-notch portfolio websites. We combine creativity with technology to deliver stunning results.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyPortfolio. All rights reserved. | Designed by MyPortfolio Team.</p>
+        </div>
+    </footer>
+
+     <script>
+        const hamburger = document.querySelector('.hamburger');
+        const drawer = document.querySelector('.drawer');
+
+        hamburger.addEventListener('click', () => {
+            drawer.classList.toggle('open');
+        });
+
+        // Dropdown menu script
+        document.querySelectorAll('.dropdown-toggle').forEach(item => {
+            item.addEventListener('click', () => {
+                item.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
