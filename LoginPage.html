@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Tutorial</title>
+    <style>
+html {
+    font-size:12px;
+}
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    border:none;
+}
+.container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.container section{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+background-color:rgb(226, 226, 226);
+/* border-radius:2rem; */
+width:70%;
+height:70%;
+position:relative;
+}
+.container section .dabba {
+    width:50%;
+    height:100%;
+    /* background:rgba(255, 0, 0, 0.671); */
+    font-size:3rem;
+    font-family:sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container section .dabba1 {
+    width:50%;
+    height:100%;
+    background:rgba(152, 251, 152, 0.856);
+    font-size:2.5rem;
+    font-family:sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    position:relative;
+}
+/* .container section .dabba1 header {
+    color:white;
+    width:100%;
+    height:5rem;
+    line-height:5rem;
+    text-indent:2rem;
+    background-color:rgba(0, 0, 0, 0.911);
+    position:absolute;
+    top:0;
+} */
+.container section .dabba1:hover {
+box-shadow:0 0 20px rgba(85, 138, 85, 0.322),
+0 0 8rem lightgreen;
+transition:all 0.5s ease-in-out 0s;
+}
+.container section form {
+    width:70%;
+}
+.container section form .text {
+    margin:3rem 0rem;
+}
+.container section form input {
+    width:100%;
+    padding:0.8rem;
+    border-radius:1rem;
+    font-family:cursive;
+    font-size:1.2rem;
+    font-weight:600;
+    margin:1rem 0rem;
+}
+.container section form .user {
+ font-size:1.3rem;
+ margin-bottom:-10px;
+} 
+.container section form input[type=text]:hover {
+   box-shadow:1px 1px 20px rgba(20, 20, 20, 0.603);
+}
+.container section form input[type=password]:hover {
+   box-shadow:1px 1px 20px rgba(20, 20, 20, 0.603);
+}
+.container section form input[type=submit] {
+    color:black;
+    background-color:rgb(121, 184, 121);
+    border:2px solid rgba(20, 20, 20, 0.377);
+    margin:2rem 0rem;
+}
+.container section form input[type=submit]:hover {
+   font-family:1.2rem;
+   box-shadow:1px 1px 6px rgba(0, 0, 0, 0.61)
+}
+.container section form article {
+    font-size:1.5rem;
+    text-align:center;
+    text-shadow:1px 1px 10px rgba(20, 20, 20, 0.603);
+}
+.container section form article a {
+    text-decoration:none;
+    font-weight:600;
+    color:black;
+}
+.container section form article a:hover {
+    color:rgb(93, 30, 153);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+ <section class="bigboy">
+
+
+    <div class="dabba">
+        <h3>Welcome Back!!</h3>
+    </div>
+    <div class="dabba1">
+
+<!-- <header><h4>Tech Learn</h4></header> -->
+
+<form action="#">
+
+
+<div class="text">Login Here!</div>
+
+
+<div class="user">Username:</div>
+<span><input type="text" name="name" id="" required placeholder="Username"></span>
+
+<div class="user">Password:</div>
+<span><input type="Password" name="pass" id="" required placeholder="Password"></span>
+
+<input type="submit" value="Login">
+
+<article>Not a Member? <a href="">Sign Up!</a></article>
+
+</form>
+
+
+    </div>
+
+</section>
+    </div><!--Closing of the container-->
+</body>
+</html>
